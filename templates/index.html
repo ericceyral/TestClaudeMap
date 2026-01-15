@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Métro Paris - Temps Réel</title>
+
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+          integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+          crossorigin="anonymous">
+
+    <!-- Font Awesome pour les icônes -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Styles personnalisés -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <!-- En-tête -->
+    <header class="header">
+        <div class="header-content">
+            <h1><i class="fas fa-subway"></i> Métro Paris - Temps Réel</h1>
+            <div class="header-info">
+                <span id="last-update">Dernière mise à jour: --:--:--</span>
+                <button id="refresh-btn" class="btn-refresh" title="Actualiser">
+                    <i class="fas fa-sync-alt"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Conteneur principal -->
+    <main class="main-container">
+        <!-- Panneau latéral -->
+        <aside class="sidebar" id="sidebar">
+            <div class="sidebar-header">
+                <h2>Lignes de Métro</h2>
+                <button id="toggle-sidebar" class="btn-toggle">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+            </div>
+
+            <div class="sidebar-content">
+                <!-- Filtres des lignes -->
+                <div class="line-filters">
+                    <div class="filter-actions">
+                        <button id="select-all" class="btn-filter">Tout sélectionner</button>
+                        <button id="deselect-all" class="btn-filter">Tout désélectionner</button>
+                    </div>
+
+                    <div class="lines-grid" id="lines-grid">
+                        {% for line, color in metro_colors.items() %}
+                        <label class="line-checkbox" style="--line-color: {{ color }}">
+                            <input type="checkbox" data-line="{{ line }}" checked>
+                            <span class="line-badge">{{ line }}</span>
+                        </label>
+                        {% endfor %}
+                    </div>
+                </div>
+
+                <!-- Statistiques -->
+                <div class="stats-panel">
+                    <h3>Statistiques</h3>
+                    <div class="stats-grid">
+                        <div class="stat-item">
+                            <span class="stat-value" id="total-vehicles">0</span>
+                            <span class="stat-label">Trains en circulation</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-value" id="total-stations">0</span>
+                            <span class="stat-label">Stations</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Légende -->
+                <div class="legend-panel">
+                    <h3>Légende</h3>
+                    <div class="legend-items">
+                        <div class="legend-item">
+                            <span class="legend-icon train-icon"></span>
+                            <span>Train en mouvement</span>
+                        </div>
+                        <div class="legend-item">
+                            <span class="legend-icon station-icon"></span>
+                            <span>Station</span>
+                        </div>
+                    </div>
+                </div>
+
+                {% if not has_api_key %}
+                <div class="api-warning">
+                    <i class="fas fa-exclamation-triangle"></i>
+                    <p>Clé API IDFM non configurée. Les positions en temps réel ne sont pas disponibles.</p>
+                    <a href="https://prim.iledefrance-mobilites.fr/" target="_blank">Obtenir une clé API</a>
+                </div>
+                {% endif %}
+            </div>
+        </aside>
+
+        <!-- Carte -->
+        <div class="map-container">
+            <div id="map"></div>
+
+            <!-- Bouton mobile pour ouvrir le sidebar -->
+            <button id="mobile-menu-btn" class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </button>
+
+            <!-- Indicateur de chargement -->
+            <div id="loading-overlay" class="loading-overlay">
+                <div class="loading-spinner">
+                    <i class="fas fa-spinner fa-spin"></i>
+                    <span>Chargement des données...</span>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>Données fournies par <a href="https://www.iledefrance-mobilites.fr/" target="_blank">Île-de-France Mobilités</a></p>
+    </footer>
+
+    <!-- Leaflet JS -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+            integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+            crossorigin="anonymous"></script>
+
+    <!-- Script de l'application -->
+    <script src="{{ url_for('static', filename='js/metro.js') }}"></script>
+</body>
+</html>
