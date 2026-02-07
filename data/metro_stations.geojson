@@ -1,91 +1,4657 @@
 {
   "type": "FeatureCollection",
   "features": [
-    {"type": "Feature", "properties": {"name": "La Défense", "lines": ["1"], "id": "IDFM:71517"}, "geometry": {"type": "Point", "coordinates": [2.2382, 48.8919]}},
-    {"type": "Feature", "properties": {"name": "Charles de Gaulle - Étoile", "lines": ["1", "2", "6"], "id": "IDFM:71482"}, "geometry": {"type": "Point", "coordinates": [2.2950, 48.8738]}},
-    {"type": "Feature", "properties": {"name": "George V", "lines": ["1"], "id": "IDFM:71469"}, "geometry": {"type": "Point", "coordinates": [2.3007, 48.8720]}},
-    {"type": "Feature", "properties": {"name": "Franklin D. Roosevelt", "lines": ["1", "9"], "id": "IDFM:71492"}, "geometry": {"type": "Point", "coordinates": [2.3097, 48.8689]}},
-    {"type": "Feature", "properties": {"name": "Champs-Élysées - Clemenceau", "lines": ["1", "13"], "id": "IDFM:71433"}, "geometry": {"type": "Point", "coordinates": [2.3140, 48.8675]}},
-    {"type": "Feature", "properties": {"name": "Concorde", "lines": ["1", "8", "12"], "id": "IDFM:71428"}, "geometry": {"type": "Point", "coordinates": [2.3232, 48.8656]}},
-    {"type": "Feature", "properties": {"name": "Tuileries", "lines": ["1"], "id": "IDFM:71429"}, "geometry": {"type": "Point", "coordinates": [2.3301, 48.8646]}},
-    {"type": "Feature", "properties": {"name": "Palais Royal - Musée du Louvre", "lines": ["1", "7"], "id": "IDFM:71430"}, "geometry": {"type": "Point", "coordinates": [2.3369, 48.8623]}},
-    {"type": "Feature", "properties": {"name": "Louvre - Rivoli", "lines": ["1"], "id": "IDFM:71431"}, "geometry": {"type": "Point", "coordinates": [2.3408, 48.8608]}},
-    {"type": "Feature", "properties": {"name": "Châtelet", "lines": ["1", "4", "7", "11", "14"], "id": "IDFM:71432"}, "geometry": {"type": "Point", "coordinates": [2.3470, 48.8582]}},
-    {"type": "Feature", "properties": {"name": "Hôtel de Ville", "lines": ["1", "11"], "id": "IDFM:71434"}, "geometry": {"type": "Point", "coordinates": [2.3516, 48.8573]}},
-    {"type": "Feature", "properties": {"name": "Saint-Paul", "lines": ["1"], "id": "IDFM:71435"}, "geometry": {"type": "Point", "coordinates": [2.3607, 48.8552]}},
-    {"type": "Feature", "properties": {"name": "Bastille", "lines": ["1", "5", "8"], "id": "IDFM:71436"}, "geometry": {"type": "Point", "coordinates": [2.3695, 48.8532]}},
-    {"type": "Feature", "properties": {"name": "Gare de Lyon", "lines": ["1", "14"], "id": "IDFM:71437"}, "geometry": {"type": "Point", "coordinates": [2.3727, 48.8457]}},
-    {"type": "Feature", "properties": {"name": "Nation", "lines": ["1", "2", "6", "9"], "id": "IDFM:71438"}, "geometry": {"type": "Point", "coordinates": [2.3957, 48.8484]}},
-    {"type": "Feature", "properties": {"name": "Porte Dauphine", "lines": ["2"], "id": "IDFM:71541"}, "geometry": {"type": "Point", "coordinates": [2.2772, 48.8718]}},
-    {"type": "Feature", "properties": {"name": "Barbès - Rochechouart", "lines": ["2", "4"], "id": "IDFM:71542"}, "geometry": {"type": "Point", "coordinates": [2.3499, 48.8836]}},
-    {"type": "Feature", "properties": {"name": "Pigalle", "lines": ["2", "12"], "id": "IDFM:71543"}, "geometry": {"type": "Point", "coordinates": [2.3374, 48.8822]}},
-    {"type": "Feature", "properties": {"name": "Blanche", "lines": ["2"], "id": "IDFM:71544"}, "geometry": {"type": "Point", "coordinates": [2.3325, 48.8838]}},
-    {"type": "Feature", "properties": {"name": "Place de Clichy", "lines": ["2", "13"], "id": "IDFM:71545"}, "geometry": {"type": "Point", "coordinates": [2.3277, 48.8832]}},
-    {"type": "Feature", "properties": {"name": "Belleville", "lines": ["2", "11"], "id": "IDFM:71546"}, "geometry": {"type": "Point", "coordinates": [2.3774, 48.8719]}},
-    {"type": "Feature", "properties": {"name": "Père Lachaise", "lines": ["2", "3"], "id": "IDFM:71547"}, "geometry": {"type": "Point", "coordinates": [2.3877, 48.8628]}},
-    {"type": "Feature", "properties": {"name": "Pont de Levallois", "lines": ["3"], "id": "IDFM:71551"}, "geometry": {"type": "Point", "coordinates": [2.2803, 48.8978]}},
-    {"type": "Feature", "properties": {"name": "Villiers", "lines": ["2", "3"], "id": "IDFM:71552"}, "geometry": {"type": "Point", "coordinates": [2.3155, 48.8810]}},
-    {"type": "Feature", "properties": {"name": "Europe", "lines": ["3"], "id": "IDFM:71553"}, "geometry": {"type": "Point", "coordinates": [2.3221, 48.8785]}},
-    {"type": "Feature", "properties": {"name": "Saint-Lazare", "lines": ["3", "9", "12", "13", "14"], "id": "IDFM:71554"}, "geometry": {"type": "Point", "coordinates": [2.3250, 48.8756]}},
-    {"type": "Feature", "properties": {"name": "Havre - Caumartin", "lines": ["3", "9"], "id": "IDFM:71555"}, "geometry": {"type": "Point", "coordinates": [2.3286, 48.8738]}},
-    {"type": "Feature", "properties": {"name": "Opéra", "lines": ["3", "7", "8"], "id": "IDFM:71556"}, "geometry": {"type": "Point", "coordinates": [2.3318, 48.8709]}},
-    {"type": "Feature", "properties": {"name": "Quatre-Septembre", "lines": ["3"], "id": "IDFM:71557"}, "geometry": {"type": "Point", "coordinates": [2.3370, 48.8693]}},
-    {"type": "Feature", "properties": {"name": "Bourse", "lines": ["3"], "id": "IDFM:71558"}, "geometry": {"type": "Point", "coordinates": [2.3417, 48.8687]}},
-    {"type": "Feature", "properties": {"name": "Sentier", "lines": ["3"], "id": "IDFM:71559"}, "geometry": {"type": "Point", "coordinates": [2.3472, 48.8676]}},
-    {"type": "Feature", "properties": {"name": "Réaumur - Sébastopol", "lines": ["3", "4"], "id": "IDFM:71560"}, "geometry": {"type": "Point", "coordinates": [2.3527, 48.8665]}},
-    {"type": "Feature", "properties": {"name": "Arts et Métiers", "lines": ["3", "11"], "id": "IDFM:71561"}, "geometry": {"type": "Point", "coordinates": [2.3561, 48.8655]}},
-    {"type": "Feature", "properties": {"name": "Temple", "lines": ["3"], "id": "IDFM:71562"}, "geometry": {"type": "Point", "coordinates": [2.3617, 48.8638]}},
-    {"type": "Feature", "properties": {"name": "République", "lines": ["3", "5", "8", "9", "11"], "id": "IDFM:71563"}, "geometry": {"type": "Point", "coordinates": [2.3636, 48.8674]}},
-    {"type": "Feature", "properties": {"name": "Gambetta", "lines": ["3", "3bis"], "id": "IDFM:71564"}, "geometry": {"type": "Point", "coordinates": [2.3985, 48.8648]}},
-    {"type": "Feature", "properties": {"name": "Gallieni", "lines": ["3"], "id": "IDFM:71565"}, "geometry": {"type": "Point", "coordinates": [2.4157, 48.8649]}},
-    {"type": "Feature", "properties": {"name": "Porte de Clignancourt", "lines": ["4"], "id": "IDFM:71571"}, "geometry": {"type": "Point", "coordinates": [2.3447, 48.8974]}},
-    {"type": "Feature", "properties": {"name": "Gare du Nord", "lines": ["4", "5"], "id": "IDFM:71572"}, "geometry": {"type": "Point", "coordinates": [2.3556, 48.8799]}},
-    {"type": "Feature", "properties": {"name": "Gare de l'Est", "lines": ["4", "5", "7"], "id": "IDFM:71573"}, "geometry": {"type": "Point", "coordinates": [2.3581, 48.8763]}},
-    {"type": "Feature", "properties": {"name": "Les Halles", "lines": ["4"], "id": "IDFM:71574"}, "geometry": {"type": "Point", "coordinates": [2.3462, 48.8622]}},
-    {"type": "Feature", "properties": {"name": "Saint-Michel", "lines": ["4"], "id": "IDFM:71575"}, "geometry": {"type": "Point", "coordinates": [2.3440, 48.8533]}},
-    {"type": "Feature", "properties": {"name": "Odéon", "lines": ["4", "10"], "id": "IDFM:71576"}, "geometry": {"type": "Point", "coordinates": [2.3387, 48.8520]}},
-    {"type": "Feature", "properties": {"name": "Saint-Germain-des-Prés", "lines": ["4"], "id": "IDFM:71577"}, "geometry": {"type": "Point", "coordinates": [2.3337, 48.8532]}},
-    {"type": "Feature", "properties": {"name": "Montparnasse - Bienvenüe", "lines": ["4", "6", "12", "13"], "id": "IDFM:71578"}, "geometry": {"type": "Point", "coordinates": [2.3230, 48.8427]}},
-    {"type": "Feature", "properties": {"name": "Mairie de Montrouge", "lines": ["4"], "id": "IDFM:71579"}, "geometry": {"type": "Point", "coordinates": [2.3197, 48.8180]}},
-    {"type": "Feature", "properties": {"name": "Bobigny - Pablo Picasso", "lines": ["5"], "id": "IDFM:71581"}, "geometry": {"type": "Point", "coordinates": [2.4496, 48.9063]}},
-    {"type": "Feature", "properties": {"name": "Stalingrad", "lines": ["2", "5", "7"], "id": "IDFM:71582"}, "geometry": {"type": "Point", "coordinates": [2.3680, 48.8843]}},
-    {"type": "Feature", "properties": {"name": "Place d'Italie", "lines": ["5", "6", "7"], "id": "IDFM:71583"}, "geometry": {"type": "Point", "coordinates": [2.3555, 48.8311]}},
-    {"type": "Feature", "properties": {"name": "Bercy", "lines": ["6", "14"], "id": "IDFM:71591"}, "geometry": {"type": "Point", "coordinates": [2.3790, 48.8403]}},
-    {"type": "Feature", "properties": {"name": "Trocadéro", "lines": ["6", "9"], "id": "IDFM:71592"}, "geometry": {"type": "Point", "coordinates": [2.2876, 48.8632]}},
-    {"type": "Feature", "properties": {"name": "Bir-Hakeim", "lines": ["6"], "id": "IDFM:71593"}, "geometry": {"type": "Point", "coordinates": [2.2895, 48.8541]}},
-    {"type": "Feature", "properties": {"name": "Denfert-Rochereau", "lines": ["4", "6"], "id": "IDFM:71594"}, "geometry": {"type": "Point", "coordinates": [2.3323, 48.8339]}},
-    {"type": "Feature", "properties": {"name": "Villejuif - Louis Aragon", "lines": ["7"], "id": "IDFM:71601"}, "geometry": {"type": "Point", "coordinates": [2.3681, 48.7877]}},
-    {"type": "Feature", "properties": {"name": "La Courneuve - 8 Mai 1945", "lines": ["7"], "id": "IDFM:71602"}, "geometry": {"type": "Point", "coordinates": [2.4103, 48.9199]}},
-    {"type": "Feature", "properties": {"name": "Mairie d'Ivry", "lines": ["7"], "id": "IDFM:71603"}, "geometry": {"type": "Point", "coordinates": [2.3842, 48.8114]}},
-    {"type": "Feature", "properties": {"name": "Pyramides", "lines": ["7", "14"], "id": "IDFM:71604"}, "geometry": {"type": "Point", "coordinates": [2.3340, 48.8658]}},
-    {"type": "Feature", "properties": {"name": "Pont Neuf", "lines": ["7"], "id": "IDFM:71605"}, "geometry": {"type": "Point", "coordinates": [2.3422, 48.8583]}},
-    {"type": "Feature", "properties": {"name": "Balard", "lines": ["8"], "id": "IDFM:71611"}, "geometry": {"type": "Point", "coordinates": [2.2789, 48.8365]}},
-    {"type": "Feature", "properties": {"name": "La Motte-Picquet - Grenelle", "lines": ["6", "8", "10"], "id": "IDFM:71612"}, "geometry": {"type": "Point", "coordinates": [2.2989, 48.8487]}},
-    {"type": "Feature", "properties": {"name": "Invalides", "lines": ["8", "13"], "id": "IDFM:71613"}, "geometry": {"type": "Point", "coordinates": [2.3140, 48.8613]}},
-    {"type": "Feature", "properties": {"name": "Madeleine", "lines": ["8", "12", "14"], "id": "IDFM:71614"}, "geometry": {"type": "Point", "coordinates": [2.3252, 48.8707]}},
-    {"type": "Feature", "properties": {"name": "Créteil - Préfecture", "lines": ["8"], "id": "IDFM:71615"}, "geometry": {"type": "Point", "coordinates": [2.4597, 48.7798]}},
-    {"type": "Feature", "properties": {"name": "Mairie de Montreuil", "lines": ["9"], "id": "IDFM:71621"}, "geometry": {"type": "Point", "coordinates": [2.4415, 48.8620]}},
-    {"type": "Feature", "properties": {"name": "Pont de Sèvres", "lines": ["9"], "id": "IDFM:71622"}, "geometry": {"type": "Point", "coordinates": [2.2306, 48.8297]}},
-    {"type": "Feature", "properties": {"name": "Richelieu - Drouot", "lines": ["8", "9"], "id": "IDFM:71623"}, "geometry": {"type": "Point", "coordinates": [2.3383, 48.8719]}},
-    {"type": "Feature", "properties": {"name": "Grands Boulevards", "lines": ["8", "9"], "id": "IDFM:71624"}, "geometry": {"type": "Point", "coordinates": [2.3433, 48.8717]}},
-    {"type": "Feature", "properties": {"name": "Boulogne - Pont de Saint-Cloud", "lines": ["10"], "id": "IDFM:71631"}, "geometry": {"type": "Point", "coordinates": [2.2281, 48.8403]}},
-    {"type": "Feature", "properties": {"name": "Gare d'Austerlitz", "lines": ["5", "10"], "id": "IDFM:71632"}, "geometry": {"type": "Point", "coordinates": [2.3650, 48.8423]}},
-    {"type": "Feature", "properties": {"name": "Sèvres - Babylone", "lines": ["10", "12"], "id": "IDFM:71633"}, "geometry": {"type": "Point", "coordinates": [2.3267, 48.8514]}},
-    {"type": "Feature", "properties": {"name": "Cluny - La Sorbonne", "lines": ["10"], "id": "IDFM:71634"}, "geometry": {"type": "Point", "coordinates": [2.3456, 48.8513]}},
-    {"type": "Feature", "properties": {"name": "Jussieu", "lines": ["7", "10"], "id": "IDFM:71635"}, "geometry": {"type": "Point", "coordinates": [2.3544, 48.8458]}},
-    {"type": "Feature", "properties": {"name": "Mairie des Lilas", "lines": ["11"], "id": "IDFM:71641"}, "geometry": {"type": "Point", "coordinates": [2.4160, 48.8800]}},
-    {"type": "Feature", "properties": {"name": "Rambuteau", "lines": ["11"], "id": "IDFM:71642"}, "geometry": {"type": "Point", "coordinates": [2.3537, 48.8619]}},
-    {"type": "Feature", "properties": {"name": "Front Populaire", "lines": ["12"], "id": "IDFM:71651"}, "geometry": {"type": "Point", "coordinates": [2.3655, 48.9068]}},
-    {"type": "Feature", "properties": {"name": "Mairie d'Issy", "lines": ["12"], "id": "IDFM:71652"}, "geometry": {"type": "Point", "coordinates": [2.2731, 48.8244]}},
-    {"type": "Feature", "properties": {"name": "Assemblée Nationale", "lines": ["12"], "id": "IDFM:71653"}, "geometry": {"type": "Point", "coordinates": [2.3197, 48.8611]}},
-    {"type": "Feature", "properties": {"name": "Saint-Denis - Université", "lines": ["13"], "id": "IDFM:71661"}, "geometry": {"type": "Point", "coordinates": [2.3625, 48.9458]}},
-    {"type": "Feature", "properties": {"name": "Asnières - Gennevilliers", "lines": ["13"], "id": "IDFM:71662"}, "geometry": {"type": "Point", "coordinates": [2.2845, 48.9302]}},
-    {"type": "Feature", "properties": {"name": "Châtillon - Montrouge", "lines": ["13"], "id": "IDFM:71663"}, "geometry": {"type": "Point", "coordinates": [2.3015, 48.8107]}},
-    {"type": "Feature", "properties": {"name": "Varenne", "lines": ["13"], "id": "IDFM:71664"}, "geometry": {"type": "Point", "coordinates": [2.3151, 48.8569]}},
-    {"type": "Feature", "properties": {"name": "Miromesnil", "lines": ["9", "13"], "id": "IDFM:71665"}, "geometry": {"type": "Point", "coordinates": [2.3151, 48.8738]}},
-    {"type": "Feature", "properties": {"name": "Saint-Ouen", "lines": ["14"], "id": "IDFM:71671"}, "geometry": {"type": "Point", "coordinates": [2.3304, 48.9033]}},
-    {"type": "Feature", "properties": {"name": "Olympiades", "lines": ["14"], "id": "IDFM:71672"}, "geometry": {"type": "Point", "coordinates": [2.3670, 48.8272]}},
-    {"type": "Feature", "properties": {"name": "Bibliothèque François Mitterrand", "lines": ["14"], "id": "IDFM:71673"}, "geometry": {"type": "Point", "coordinates": [2.3761, 48.8299]}},
-    {"type": "Feature", "properties": {"name": "Cour Saint-Émilion", "lines": ["14"], "id": "IDFM:71674"}, "geometry": {"type": "Point", "coordinates": [2.3869, 48.8340]}}
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "IDFM:12458528",
+        "name": "Châtillon-Montrouge",
+        "lines": [
+          "13"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3015874,
+          48.8108097
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "IDFM:12458534",
+        "name": "Malakoff - Rue Étienne Dolet",
+        "lines": [
+          "13"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2970255,
+          48.8153367
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "IDFM:27402092",
+        "name": "Esplanade de La Défense",
+        "lines": [
+          "1"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2494747,
+          48.8882396
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "IDFM:27432238",
+        "name": "Les Sablons",
+        "lines": [
+          "1"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2720961,
+          48.8810615
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "IDFM:27432240",
+        "name": "Argentine",
+        "lines": [
+          "1"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2893655,
+          48.8755816
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "IDFM:27432249",
+        "name": "George V",
+        "lines": [
+          "1"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3004269,
+          48.8720688
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "IDFM:27432251",
+        "name": "Franklin D. Roosevelt",
+        "lines": [
+          "9"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3099266,
+          48.8690339
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "IDFM:27432257",
+        "name": "Concorde",
+        "lines": [
+          "1"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3221445,
+          48.8661544
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "IDFM:27432258",
+        "name": "Tuileries",
+        "lines": [
+          "1"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3304389,
+          48.864248
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "IDFM:27432259",
+        "name": "Palais Royal - Musée du Louvre",
+        "lines": [
+          "1",
+          "7"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3363491,
+          48.8623926
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "IDFM:27432260",
+        "name": "Louvre — Rivoli",
+        "lines": [
+          "1"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3411235,
+          48.8608027
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "IDFM:27441867",
+        "name": "Saint-Paul",
+        "lines": [
+          "1"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3603522,
+          48.8553789
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "IDFM:27441876",
+        "name": "Bastille",
+        "lines": [
+          "1"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3686542,
+          48.8520122
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "IDFM:27441889",
+        "name": "Gare de Lyon (métro 1)",
+        "lines": [
+          "1"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3741911,
+          48.8459232
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "IDFM:27441892",
+        "name": "Reuilly — Diderot",
+        "lines": [
+          "1",
+          "8"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3868055,
+          48.8473591
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "IDFM:27441900",
+        "name": "Porte de Vincennes",
+        "lines": [
+          "1"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.4080861,
+          48.8473335
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "IDFM:29658070",
+        "name": "Marcel Sembat",
+        "lines": [
+          "9"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2435931,
+          48.8336468
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "IDFM:34979170",
+        "name": "La Motte-Picquet - Grenelle",
+        "lines": [
+          "6",
+          "8",
+          "10"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2981916,
+          48.8489809
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "IDFM:34979171",
+        "name": "Cambronne",
+        "lines": [
+          "6"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3029524,
+          48.8475338
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "IDFM:34979187",
+        "name": "Dupleix",
+        "lines": [
+          "6"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2936685,
+          48.8504212
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "IDFM:134369001",
+        "name": "Mairie d'Issy",
+        "lines": [
+          "12"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2731713,
+          48.8241474
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "IDFM:134369013",
+        "name": "Corentin Celton",
+        "lines": [
+          "12"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2793746,
+          48.8270526
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "IDFM:134375192",
+        "name": "Porte de Versailles",
+        "lines": [
+          "12"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2879898,
+          48.8324292
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "IDFM:134375198",
+        "name": "Convention",
+        "lines": [
+          "12"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2966292,
+          48.8373091
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "IDFM:137603248",
+        "name": "La Défense - Grande Arche",
+        "lines": [
+          "1"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2377691,
+          48.8919677
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "IDFM:220359379",
+        "name": "Porte d'Orléans",
+        "lines": [
+          "4"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3256398,
+          48.8236371
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "IDFM:220359382",
+        "name": "Alésia",
+        "lines": [
+          "4"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3270406,
+          48.8280318
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "IDFM:220359385",
+        "name": "Mouton-Duvernet",
+        "lines": [
+          "4"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3298549,
+          48.8312847
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "IDFM:220359387",
+        "name": "Denfert-Rochereau",
+        "lines": [
+          "4",
+          "6"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3326258,
+          48.8342613
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "IDFM:220359389",
+        "name": "Raspail",
+        "lines": [
+          "4",
+          "6"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3307591,
+          48.8389619
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "IDFM:235439898",
+        "name": "Saint-Jacques",
+        "lines": [
+          "6"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3366295,
+          48.8330168
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "IDFM:235440184",
+        "name": "Glacière",
+        "lines": [
+          "6"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3434842,
+          48.8311288
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "IDFM:235440505",
+        "name": "Corvisart",
+        "lines": [
+          "6"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3504704,
+          48.8297785
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "IDFM:235441392",
+        "name": "Place d'Italie",
+        "lines": [
+          "5",
+          "6",
+          "7"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3558807,
+          48.8308786
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "IDFM:235441394",
+        "name": "Nationale",
+        "lines": [
+          "6"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3628553,
+          48.8331986
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "IDFM:235441395",
+        "name": "Chevaleret",
+        "lines": [
+          "6"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3680817,
+          48.8349549
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "IDFM:235444383",
+        "name": "Quai de la Gare",
+        "lines": [
+          "6"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3729066,
+          48.8370762
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "IDFM:235447792",
+        "name": "Stalingrad",
+        "lines": [
+          "2",
+          "5",
+          "7"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3670741,
+          48.8842416
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "IDFM:241998557",
+        "name": "Nation",
+        "lines": [
+          "1",
+          "2",
+          "6",
+          "9"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3955668,
+          48.847611
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "IDFM:241998757",
+        "name": "Château de Vincennes",
+        "lines": [
+          "1"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.438912,
+          48.8445799
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "IDFM:241998758",
+        "name": "Bérault",
+        "lines": [
+          "1"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.4292637,
+          48.8454473
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "IDFM:243556950",
+        "name": "Buzenval",
+        "lines": [
+          "9"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.4013757,
+          48.8518166
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "IDFM:243557863",
+        "name": "Saint-Mandé",
+        "lines": [
+          "1"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.4184422,
+          48.846435
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "IDFM:243559718",
+        "name": "Avron",
+        "lines": [
+          "2"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3979296,
+          48.8520027
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "IDFM:243560761",
+        "name": "Ménilmontant",
+        "lines": [
+          "2"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3836703,
+          48.8663246
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "IDFM:243560762",
+        "name": "Père Lachaise",
+        "lines": [
+          "2"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3874348,
+          48.8629496
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "IDFM:243560763",
+        "name": "Philippe Auguste",
+        "lines": [
+          "2"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3901666,
+          48.8582563
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "IDFM:243560764",
+        "name": "Alexandre Dumas",
+        "lines": [
+          "2"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3949195,
+          48.8559237
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "IDFM:243563845",
+        "name": "Belleville",
+        "lines": [
+          "11"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3770318,
+          48.8719933
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "IDFM:243563846",
+        "name": "Couronnes",
+        "lines": [
+          "2"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3805811,
+          48.8690435
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "IDFM:243563916",
+        "name": "Colonel Fabien",
+        "lines": [
+          "2"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3710197,
+          48.8774215
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "IDFM:243566025",
+        "name": "Blanche",
+        "lines": [
+          "2"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3336343,
+          48.8834886
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "IDFM:243566027",
+        "name": "Place de Clichy",
+        "lines": [
+          "2",
+          "13"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3272272,
+          48.8834316
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "IDFM:243566028",
+        "name": "Rome",
+        "lines": [
+          "2"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3213306,
+          48.8822428
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "IDFM:243566029",
+        "name": "Villiers",
+        "lines": [
+          "2"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3149051,
+          48.8811192
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "IDFM:243566030",
+        "name": "Monceau",
+        "lines": [
+          "2"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3085925,
+          48.8802919
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "IDFM:243566729",
+        "name": "Porte Dauphine",
+        "lines": [
+          "2"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2777713,
+          48.871318
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "IDFM:243577793",
+        "name": "Arts et Métiers",
+        "lines": [
+          "11"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3561316,
+          48.8654414
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "IDFM:243577794",
+        "name": "Réaumur - Sébastopol",
+        "lines": [
+          "4"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3525513,
+          48.8662385
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "IDFM:243580336",
+        "name": "Opéra",
+        "lines": [
+          "7",
+          "8"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3323554,
+          48.8706778
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "IDFM:243580337",
+        "name": "Havre - Caumartin",
+        "lines": [
+          "9"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3273189,
+          48.8736792
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "IDFM:244564486",
+        "name": "Vaugirard",
+        "lines": [
+          "12"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3012923,
+          48.8395785
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "IDFM:244564489",
+        "name": "Volontaires",
+        "lines": [
+          "12"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3080031,
+          48.8415194
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "IDFM:244564496",
+        "name": "Falguière",
+        "lines": [
+          "12"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3175634,
+          48.8443954
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "IDFM:245320755",
+        "name": "Duroc",
+        "lines": [
+          "10",
+          "13"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3166375,
+          48.8468544
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "IDFM:245320758",
+        "name": "Saint-François-Xavier",
+        "lines": [
+          "13"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3144012,
+          48.851398
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "IDFM:245320759",
+        "name": "Varenne",
+        "lines": [
+          "13"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3150585,
+          48.8568023
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "IDFM:245525187",
+        "name": "Bel-Air",
+        "lines": [
+          "6"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.4008998,
+          48.8413343
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "IDFM:249405596",
+        "name": "Marx Dormoy",
+        "lines": [
+          "12"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3599967,
+          48.8905061
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "IDFM:249594554",
+        "name": "Gabriel Péri",
+        "lines": [
+          "13"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2946541,
+          48.9163969
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "IDFM:251457813",
+        "name": "Jacques Bonsergent",
+        "lines": [
+          "5"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3607546,
+          48.8711191
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "IDFM:255230720",
+        "name": "Croix de Chavaux",
+        "lines": [
+          "9"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.4357587,
+          48.857946
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "IDFM:255230722",
+        "name": "Mairie de Montreuil",
+        "lines": [
+          "9"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.441569,
+          48.8625988
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "IDFM:256511194",
+        "name": "Maraîchers",
+        "lines": [
+          "9"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.4061094,
+          48.8526992
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "IDFM:256512276",
+        "name": "Porte de Montreuil",
+        "lines": [
+          "9"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.4105242,
+          48.8534759
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "IDFM:256512845",
+        "name": "Robespierre",
+        "lines": [
+          "9"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.4237108,
+          48.8558145
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "IDFM:256513205",
+        "name": "Rue des Boulets",
+        "lines": [
+          "9"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3887914,
+          48.8525808
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "IDFM:256513438",
+        "name": "Charonne",
+        "lines": [
+          "9"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3853565,
+          48.8547441
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "IDFM:256965321",
+        "name": "Voltaire",
+        "lines": [
+          "9"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3798044,
+          48.858158
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "IDFM:256965609",
+        "name": "Saint-Ambroise",
+        "lines": [
+          "9"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3747956,
+          48.8610516
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "IDFM:256966059",
+        "name": "Oberkampf",
+        "lines": [
+          "5",
+          "9"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3694165,
+          48.8640529
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "IDFM:256967077",
+        "name": "Strasbourg - Saint-Denis",
+        "lines": [
+          "4",
+          "8",
+          "9"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3542825,
+          48.8693002
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "IDFM:256967078",
+        "name": "Bonne Nouvelle",
+        "lines": [
+          "8"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3487498,
+          48.8706233
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "IDFM:256967079",
+        "name": "Grands Boulevards",
+        "lines": [
+          "8"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3434953,
+          48.8714412
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "IDFM:256967080",
+        "name": "Richelieu Drouot",
+        "lines": [
+          "8",
+          "9"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3396056,
+          48.8718846
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "IDFM:256967458",
+        "name": "Chaussée d'Antin - La Fayette",
+        "lines": [
+          "7",
+          "9"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3332567,
+          48.8729675
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "IDFM:256967554",
+        "name": "Saint-Augustin",
+        "lines": [
+          "9"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3199277,
+          48.8746968
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "IDFM:260148615",
+        "name": "Cardinal Lemoine",
+        "lines": [
+          "10"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.351772,
+          48.8465283
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "IDFM:260148619",
+        "name": "Maubert Mutualité",
+        "lines": [
+          "10"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3487756,
+          48.8499484
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "IDFM:260148622",
+        "name": "Cluny - La Sorbonne",
+        "lines": [
+          "10"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.344207,
+          48.8510699
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "IDFM:260149008",
+        "name": "Odéon",
+        "lines": [
+          "4",
+          "10"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3393369,
+          48.8522428
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "IDFM:260149322",
+        "name": "Mabillon",
+        "lines": [
+          "10"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3349474,
+          48.8528994
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "IDFM:260301828",
+        "name": "Balard",
+        "lines": [
+          "8"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.278379,
+          48.8363968
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "IDFM:260301831",
+        "name": "Lourmel",
+        "lines": [
+          "8"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2821481,
+          48.8387364
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "IDFM:260301832",
+        "name": "Boucicaut",
+        "lines": [
+          "8"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2879218,
+          48.8410837
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "IDFM:260301833",
+        "name": "Félix Faure",
+        "lines": [
+          "8"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2917792,
+          48.8426775
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "IDFM:260832378",
+        "name": "Dugommier",
+        "lines": [
+          "6"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3896692,
+          48.8390472
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "IDFM:260832379",
+        "name": "Daumesnil",
+        "lines": [
+          "6",
+          "8"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3959529,
+          48.8395675
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "IDFM:260832540",
+        "name": "Bercy",
+        "lines": [
+          "6",
+          "14"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3799474,
+          48.8401549
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "IDFM:260833474",
+        "name": "Edgar Quinet",
+        "lines": [
+          "6"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3250319,
+          48.8411108
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "IDFM:260834273",
+        "name": "Pasteur",
+        "lines": [
+          "6",
+          "12"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3126058,
+          48.8429211
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "IDFM:260835385",
+        "name": "Kléber",
+        "lines": [
+          "6"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2935098,
+          48.871677
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "IDFM:260835387",
+        "name": "Boissière",
+        "lines": [
+          "6"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2900826,
+          48.8670167
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "IDFM:260835390",
+        "name": "Passy",
+        "lines": [
+          "6"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.285778,
+          48.8575009
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "IDFM:260837422",
+        "name": "Iéna",
+        "lines": [
+          "9"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2937783,
+          48.8646725
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "IDFM:260837423",
+        "name": "Rue de la Pompe",
+        "lines": [
+          "9"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2780859,
+          48.8640063
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "IDFM:260837424",
+        "name": "La Muette",
+        "lines": [
+          "9"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2741958,
+          48.8580816
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "IDFM:260837425",
+        "name": "Ranelagh",
+        "lines": [
+          "9"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2702166,
+          48.8555764
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "IDFM:260837426",
+        "name": "Jasmin",
+        "lines": [
+          "9"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2681802,
+          48.8525598
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "IDFM:260837427",
+        "name": "Michel-Ange - Auteuil",
+        "lines": [
+          "9"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2641344,
+          48.8479434
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "IDFM:260837428",
+        "name": "Michel-Ange - Molitor",
+        "lines": [
+          "9",
+          "10"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.261895,
+          48.8452434
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "IDFM:260837429",
+        "name": "Exelmans",
+        "lines": [
+          "9"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2600472,
+          48.8430044
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "IDFM:260837430",
+        "name": "Porte de Saint-Cloud",
+        "lines": [
+          "9"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2565741,
+          48.8377707
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "IDFM:260839132",
+        "name": "Alma-Marceau",
+        "lines": [
+          "9"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3006256,
+          48.8649686
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "IDFM:260839651",
+        "name": "Saint-Philippe du Roule",
+        "lines": [
+          "9"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3100827,
+          48.8723362
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "IDFM:260839652",
+        "name": "Miromesnil",
+        "lines": [
+          "9",
+          "13"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.314468,
+          48.8736855
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "IDFM:261232833",
+        "name": "Sèvres-Babylone",
+        "lines": [
+          "10",
+          "12"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3269335,
+          48.851378
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "IDFM:261681470",
+        "name": "Mairie de Clichy",
+        "lines": [
+          "13"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3059879,
+          48.9032278
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "IDFM:261681884",
+        "name": "Brochant",
+        "lines": [
+          "13"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3202055,
+          48.8905558
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "IDFM:261682240",
+        "name": "La Fourche",
+        "lines": [
+          "13"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3257792,
+          48.8871728
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "IDFM:261735825",
+        "name": "Ségur",
+        "lines": [
+          "10"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3074897,
+          48.8470114
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "IDFM:261736122",
+        "name": "Avenue Émile Zola",
+        "lines": [
+          "10"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2953191,
+          48.8470132
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "IDFM:263567271",
+        "name": "Assemblée Nationale",
+        "lines": [
+          "12"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3210551,
+          48.860697
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "IDFM:263567272",
+        "name": "Solférino",
+        "lines": [
+          "12"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3230256,
+          48.8586528
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "IDFM:263569468",
+        "name": "Rennes",
+        "lines": [
+          "12"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3278803,
+          48.8481093
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "IDFM:263569471",
+        "name": "Notre-Dame des Champs",
+        "lines": [
+          "12"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3286803,
+          48.8452749
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "IDFM:263987856",
+        "name": "Concorde",
+        "lines": [
+          "12"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3227573,
+          48.8656344
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "IDFM:264187312",
+        "name": "Madeleine",
+        "lines": [
+          "8",
+          "12",
+          "14"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3251705,
+          48.8694436
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "IDFM:264539160",
+        "name": "Commerce",
+        "lines": [
+          "8"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2938486,
+          48.8446757
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "IDFM:264539541",
+        "name": "École Militaire",
+        "lines": [
+          "8"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3060728,
+          48.8546647
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "IDFM:264543011",
+        "name": "La Tour Maubourg",
+        "lines": [
+          "8"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3103234,
+          48.8575602
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "IDFM:264543695",
+        "name": "Invalides",
+        "lines": [
+          "13"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3139121,
+          48.8618013
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "IDFM:264546971",
+        "name": "Filles du Calvaire",
+        "lines": [
+          "8"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3666124,
+          48.8633194
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "IDFM:264549724",
+        "name": "Saint-Sébastien - Froissart",
+        "lines": [
+          "8"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3672267,
+          48.8610965
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "IDFM:264549775",
+        "name": "Chemin Vert",
+        "lines": [
+          "8"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3681089,
+          48.8574497
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "IDFM:264550619",
+        "name": "Bastille",
+        "lines": [
+          "5"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3684891,
+          48.8531864
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "IDFM:264550784",
+        "name": "Ledru-Rollin",
+        "lines": [
+          "8"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3760274,
+          48.8512945
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "IDFM:264551019",
+        "name": "Faidherbe — Chaligny",
+        "lines": [
+          "8"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3842222,
+          48.8501609
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "IDFM:264551854",
+        "name": "Montgallet",
+        "lines": [
+          "8"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3901962,
+          48.844304
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "IDFM:264552226",
+        "name": "Michel Bizot",
+        "lines": [
+          "8"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.4024586,
+          48.8370694
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "IDFM:264552296",
+        "name": "Liberté",
+        "lines": [
+          "8"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.406201,
+          48.8264064
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "IDFM:264552297",
+        "name": "Porte Dorée",
+        "lines": [
+          "8"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.4061775,
+          48.8352765
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "IDFM:264560283",
+        "name": "Picpus",
+        "lines": [
+          "6"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.40108,
+          48.8450751
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "IDFM:264561193",
+        "name": "Olympiades",
+        "lines": [
+          "14"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3664158,
+          48.8270333
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "IDFM:264561320",
+        "name": "Porte de Charenton",
+        "lines": [
+          "8"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3990408,
+          48.8322315
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "IDFM:264564507",
+        "name": "Pyramides",
+        "lines": [
+          "7"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3344261,
+          48.8657589
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "IDFM:264565077",
+        "name": "Trinité d'Estienne d'Orves",
+        "lines": [
+          "12"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3326415,
+          48.8763251
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "IDFM:264565078",
+        "name": "Notre-Dame de Lorette",
+        "lines": [
+          "12"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3385437,
+          48.8759935
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "IDFM:264565553",
+        "name": "Rue du Bac",
+        "lines": [
+          "12"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3256659,
+          48.8557241
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "IDFM:264574832",
+        "name": "Saint-Georges",
+        "lines": [
+          "12"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.337458,
+          48.8784469
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "IDFM:264575115",
+        "name": "Abbesses",
+        "lines": [
+          "12"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3379294,
+          48.8845677
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "IDFM:264575153",
+        "name": "Lamarck - Caulaincourt",
+        "lines": [
+          "12"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3388254,
+          48.8897543
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "IDFM:264575450",
+        "name": "Jules Joffrin",
+        "lines": [
+          "12"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3446394,
+          48.8924628
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "IDFM:264575930",
+        "name": "Porte de la Chapelle",
+        "lines": [
+          "12"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3594563,
+          48.8977035
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "IDFM:264575993",
+        "name": "Simplon",
+        "lines": [
+          "4"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3478412,
+          48.8938481
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "IDFM:264578125",
+        "name": "Gare du Nord (métro)",
+        "lines": [
+          "5"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3572848,
+          48.8795066
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "IDFM:264578548",
+        "name": "Gare de l'Est",
+        "lines": [
+          "4",
+          "5",
+          "7"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3579127,
+          48.8762027
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "IDFM:264579793",
+        "name": "Étienne Marcel",
+        "lines": [
+          "4"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3498703,
+          48.8640323
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "IDFM:264582252",
+        "name": "Château d'Eau",
+        "lines": [
+          "4"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3563063,
+          48.8728919
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "IDFM:264583655",
+        "name": "Les Halles",
+        "lines": [
+          "4"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3457954,
+          48.8625356
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "IDFM:264584896",
+        "name": "Cité",
+        "lines": [
+          "4"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3475476,
+          48.8552968
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "IDFM:264585098",
+        "name": "Saint-Michel",
+        "lines": [
+          "4"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3435309,
+          48.8533014
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "IDFM:264589782",
+        "name": "Saint-Germain-des-Prés",
+        "lines": [
+          "4"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3344604,
+          48.853638
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "IDFM:264590061",
+        "name": "Saint-Placide",
+        "lines": [
+          "4"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3270286,
+          48.8471196
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "IDFM:264596095",
+        "name": "Vavin",
+        "lines": [
+          "4"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3290114,
+          48.8422164
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "IDFM:264604423",
+        "name": "Charles Michels",
+        "lines": [
+          "10"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2858801,
+          48.8465262
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "IDFM:264604424",
+        "name": "Javel - André Citroën",
+        "lines": [
+          "10"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2783035,
+          48.8461584
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "IDFM:264607727",
+        "name": "Chardon Lagache",
+        "lines": [
+          "10"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.267172,
+          48.845414
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "IDFM:264608576",
+        "name": "Mirabeau",
+        "lines": [
+          "10"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2717155,
+          48.8468038
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "IDFM:264609964",
+        "name": "Boulogne - Jean Jaurès",
+        "lines": [
+          "10"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.238742,
+          48.841978
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "IDFM:264611617",
+        "name": "Boulogne - Pont de Saint-Cloud",
+        "lines": [
+          "10"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2285445,
+          48.8407449
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "IDFM:264661604",
+        "name": "Goncourt",
+        "lines": [
+          "11"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3710845,
+          48.8699553
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "IDFM:264662424",
+        "name": "Rambuteau",
+        "lines": [
+          "11"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3538089,
+          48.8617782
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "IDFM:264760370",
+        "name": "Télégraphe",
+        "lines": [
+          "11"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3990509,
+          48.8755038
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "IDFM:264760372",
+        "name": "Pyrénées",
+        "lines": [
+          "11"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3852638,
+          48.8738565
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "IDFM:264762522",
+        "name": "Jourdain",
+        "lines": [
+          "11"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3893555,
+          48.8750834
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "IDFM:264774365",
+        "name": "Gaîté",
+        "lines": [
+          "13"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3224866,
+          48.8386332
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "IDFM:264782432",
+        "name": "Plaisance",
+        "lines": [
+          "13"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3140252,
+          48.8317799
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "IDFM:264782433",
+        "name": "Pernety",
+        "lines": [
+          "13"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3180764,
+          48.8339551
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "IDFM:264787964",
+        "name": "Malakoff - Plateau de Vanves",
+        "lines": [
+          "13"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2984833,
+          48.8225032
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "IDFM:264839296",
+        "name": "Bréguet-Sabin",
+        "lines": [
+          "5"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3704333,
+          48.8566333
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "IDFM:264839297",
+        "name": "Richard Lenoir",
+        "lines": [
+          "5"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3720741,
+          48.8602134
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "IDFM:264842256",
+        "name": "Laumière",
+        "lines": [
+          "5"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3794612,
+          48.8851633
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "IDFM:264842371",
+        "name": "Ourcq",
+        "lines": [
+          "5"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3866783,
+          48.8870606
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "IDFM:264842861",
+        "name": "Porte de Pantin",
+        "lines": [
+          "5"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3926738,
+          48.8886492
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "IDFM:264842862",
+        "name": "Hoche",
+        "lines": [
+          "5"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.4025383,
+          48.89128
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "IDFM:264845552",
+        "name": "Louis Blanc",
+        "lines": [
+          "7"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3659215,
+          48.8815852
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "IDFM:264845805",
+        "name": "Poissonnière",
+        "lines": [
+          "7"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3493387,
+          48.8772374
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "IDFM:264846028",
+        "name": "Riquet",
+        "lines": [
+          "7"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3742226,
+          48.8884812
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "IDFM:264846029",
+        "name": "Crimée",
+        "lines": [
+          "7"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3773681,
+          48.8908513
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "IDFM:264846910",
+        "name": "Corentin Cariou",
+        "lines": [
+          "7"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3823046,
+          48.8947282
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "IDFM:264848142",
+        "name": "Porte de la Villette",
+        "lines": [
+          "7"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.385591,
+          48.8974039
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "IDFM:264850946",
+        "name": "Le Peletier",
+        "lines": [
+          "7"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.340364,
+          48.874928
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "IDFM:264850947",
+        "name": "Cadet",
+        "lines": [
+          "7"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3443098,
+          48.8759424
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "IDFM:264854170",
+        "name": "Pont Neuf",
+        "lines": [
+          "7"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3422603,
+          48.8585528
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "IDFM:264855951",
+        "name": "Sully - Morland",
+        "lines": [
+          "7"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3618174,
+          48.8513954
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "IDFM:264855952",
+        "name": "Pont Marie",
+        "lines": [
+          "7"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3565905,
+          48.8537872
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "IDFM:264856014",
+        "name": "Place Monge",
+        "lines": [
+          "7"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3522772,
+          48.8429053
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "IDFM:264859025",
+        "name": "Censier - Daubenton",
+        "lines": [
+          "7"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3519334,
+          48.8406473
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "IDFM:264860337",
+        "name": "Les Gobelins",
+        "lines": [
+          "7"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3527513,
+          48.8356445
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "IDFM:264865933",
+        "name": "Mairie des Lilas",
+        "lines": [
+          "11"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.4164717,
+          48.8797602
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "IDFM:265125434",
+        "name": "Saint-Marcel",
+        "lines": [
+          "5"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3608491,
+          48.8382761
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "IDFM:265125750",
+        "name": "Campo-Formio",
+        "lines": [
+          "5"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3589273,
+          48.8356545
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "IDFM:265130052",
+        "name": "Guy Môquet",
+        "lines": [
+          "13"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.327395,
+          48.8927063
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "IDFM:265130832",
+        "name": "Porte de Saint-Ouen",
+        "lines": [
+          "13"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3289008,
+          48.8973715
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "IDFM:265130965",
+        "name": "Garibaldi",
+        "lines": [
+          "13"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.331871,
+          48.906204
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "IDFM:268537197",
+        "name": "Tolbiac",
+        "lines": [
+          "7"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3573505,
+          48.8260904
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "IDFM:268537526",
+        "name": "Maison Blanche",
+        "lines": [
+          "7"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.358504,
+          48.8224745
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "IDFM:268537559",
+        "name": "Porte d'Italie",
+        "lines": [
+          "7"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.359533,
+          48.8190866
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "IDFM:269407980",
+        "name": "Les Agnettes",
+        "lines": [
+          "13"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2862019,
+          48.9231172
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "IDFM:269407982",
+        "name": "Asnières – Gennevilliers – Les Courtilles",
+        "lines": [
+          "13"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2841827,
+          48.9307562
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "IDFM:270314435",
+        "name": "Fort d'Aubervilliers",
+        "lines": [
+          "7"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.4038072,
+          48.9142573
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "IDFM:270314436",
+        "name": "Aubervilliers - Pantin - Quatre Chemins",
+        "lines": [
+          "7"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3922499,
+          48.9036279
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "IDFM:270314850",
+        "name": "La Courneuve - 8 mai 1945",
+        "lines": [
+          "7"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.4107677,
+          48.9207587
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "IDFM:282705141",
+        "name": "Champs-Élysées - Clemenceau",
+        "lines": [
+          "1",
+          "13"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3138853,
+          48.8678013
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "IDFM:300937961",
+        "name": "Créteil — L'Échat (Hôpital Henri Mondor)",
+        "lines": [
+          "8"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.449235,
+          48.7963514
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "IDFM:300939611",
+        "name": "Créteil Université",
+        "lines": [
+          "8"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.4504803,
+          48.7899066
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "IDFM:300939641",
+        "name": "Créteil — Préfecture (Hôtel de Ville)",
+        "lines": [
+          "8"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.4594504,
+          48.7797556
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "IDFM:300940184",
+        "name": "Maisons-Alfort — Les Juilliottes",
+        "lines": [
+          "8"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.4456085,
+          48.8033311
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "IDFM:300940186",
+        "name": "Maisons-Alfort — Stade",
+        "lines": [
+          "8"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.4347211,
+          48.8090371
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "IDFM:300946896",
+        "name": "École Vétérinaire de Maisons-Alfort",
+        "lines": [
+          "8"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.4217316,
+          48.8150196
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "IDFM:300947457",
+        "name": "Charenton-Écoles",
+        "lines": [
+          "8"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.4137829,
+          48.8215612
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "IDFM:313498413",
+        "name": "Mairie de Saint-Ouen",
+        "lines": [
+          "13"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3339027,
+          48.9119254
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "IDFM:313500306",
+        "name": "Carrefour Pleyel",
+        "lines": [
+          "13"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3433012,
+          48.9195753
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "IDFM:324422448",
+        "name": "Saint-Sulpice",
+        "lines": [
+          "4"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3307247,
+          48.8511006
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "IDFM:324433999",
+        "name": "Montparnasse-Bienvenüe",
+        "lines": [
+          "4",
+          "12"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3242652,
+          48.8439798
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "IDFM:326379672",
+        "name": "Château Landon",
+        "lines": [
+          "7"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3624612,
+          48.8788951
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "IDFM:330096020",
+        "name": "Église de Pantin",
+        "lines": [
+          "5"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.4133107,
+          48.8932564
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "IDFM:331584770",
+        "name": "Liège",
+        "lines": [
+          "13"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3270241,
+          48.8796037
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "IDFM:331593267",
+        "name": "Saint-Denis Porte de Paris",
+        "lines": [
+          "13"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3562706,
+          48.9300243
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "IDFM:331594254",
+        "name": "Saint-Denis-Université",
+        "lines": [
+          "13"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3645665,
+          48.9458487
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "IDFM:339000214",
+        "name": "Bir-Hakeim",
+        "lines": [
+          "6"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2893959,
+          48.8538982
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "IDFM:355223536",
+        "name": "Billancourt",
+        "lines": [
+          "9"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2373655,
+          48.8317277
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "IDFM:370525978",
+        "name": "Pont de Sèvres",
+        "lines": [
+          "9"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2308732,
+          48.8296613
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "IDFM:473140143",
+        "name": "Vaneau",
+        "lines": [
+          "10"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3218878,
+          48.8491427
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "IDFM:635066117",
+        "name": "Saint-Lazare",
+        "lines": [
+          "12"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3278994,
+          48.8757002
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "IDFM:838603003",
+        "name": "Ternes",
+        "lines": [
+          "2"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2990808,
+          48.8782743
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "IDFM:928528344",
+        "name": "Créteil — Pointe du Lac",
+        "lines": [
+          "8"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.4643844,
+          48.7687211
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "IDFM:1480605477",
+        "name": "Barbès - Rochechouart",
+        "lines": [
+          "4"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3496271,
+          48.8837697
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "IDFM:1481217746",
+        "name": "Marcadet - Poissonniers",
+        "lines": [
+          "4",
+          "12"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3497296,
+          48.8914837
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "IDFM:1489876669",
+        "name": "Concorde",
+        "lines": [
+          "8"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3218526,
+          48.8665117
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "IDFM:1584502760",
+        "name": "Bastille",
+        "lines": [
+          "8"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3691871,
+          48.8536788
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "IDFM:1657008775",
+        "name": "Gare de Lyon",
+        "lines": [
+          "14"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3740091,
+          48.8434427
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "IDFM:1659913199",
+        "name": "Sèvres-Lecourbe",
+        "lines": [
+          "6"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3095848,
+          48.8456163
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "IDFM:1771702724",
+        "name": "Bobigny - Pablo Picasso",
+        "lines": [
+          "5"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.4491919,
+          48.9064052
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "IDFM:1780556821",
+        "name": "Porte de Clignancourt",
+        "lines": [
+          "4"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3448521,
+          48.8973976
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "IDFM:1805599567",
+        "name": "Montparnasse-Bienvenüe",
+        "lines": [
+          "6",
+          "13"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.321074,
+          48.8421016
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "IDFM:1997792992",
+        "name": "Jaurès",
+        "lines": [
+          "2",
+          "5"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3703263,
+          48.8825949
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "IDFM:2023301831",
+        "name": "Porte de Vanves",
+        "lines": [
+          "13"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3054796,
+          48.827676
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "IDFM:2066531402",
+        "name": "Place des Fêtes",
+        "lines": [
+          "11"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3935636,
+          48.8767737
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "IDFM:2066558458",
+        "name": "Courcelles",
+        "lines": [
+          "2"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3043746,
+          48.8793962
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "IDFM:2075602859",
+        "name": "Front Populaire",
+        "lines": [
+          "12"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3659163,
+          48.9065634
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "IDFM:2188305051",
+        "name": "Mairie de Montrouge",
+        "lines": [
+          "4"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3195203,
+          48.818234
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "IDFM:2490169593",
+        "name": "Bobigny-Pantin (Raymond Queneau)",
+        "lines": [
+          "5"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.4251929,
+          48.8954338
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "IDFM:2493480447",
+        "name": "Porte Maillot",
+        "lines": [
+          "1"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2817745,
+          48.8779888
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "IDFM:3147028064",
+        "name": "Cour Saint-Émilion",
+        "lines": [
+          "14"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3859541,
+          48.8335481
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "IDFM:3148820837",
+        "name": "Pont de Neuilly",
+        "lines": [
+          "1"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2596366,
+          48.8849785
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "IDFM:3164676077",
+        "name": "Châtelet",
+        "lines": [
+          "7"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3483592,
+          48.8568781
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "IDFM:3164676078",
+        "name": "Châtelet",
+        "lines": [
+          "4"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3463144,
+          48.8602293
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "IDFM:3164676088",
+        "name": "Châtelet",
+        "lines": [
+          "11"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3474541,
+          48.857814
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "IDFM:3175393853",
+        "name": "Châtelet",
+        "lines": [
+          "1"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3460681,
+          48.8592004
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "IDFM:3419978162",
+        "name": "Gare d'Austerlitz",
+        "lines": [
+          "5"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3655228,
+          48.8423613
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "IDFM:3542701493",
+        "name": "Saint-Lazare",
+        "lines": [
+          "12",
+          "13",
+          "14"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3253611,
+          48.875657
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "IDFM:3703689694",
+        "name": "Hôtel de Ville",
+        "lines": [
+          "1",
+          "11"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3520682,
+          48.8573616
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "IDFM:3703690036",
+        "name": "Victor Hugo",
+        "lines": [
+          "2"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2860385,
+          48.8699556
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "IDFM:3932037758",
+        "name": "Invalides",
+        "lines": [
+          "13"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3144984,
+          48.8608923
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "IDFM:4058853101",
+        "name": "Trocadéro",
+        "lines": [
+          "6",
+          "9"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2871436,
+          48.8630487
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "IDFM:4067995155",
+        "name": "Pigalle",
+        "lines": [
+          "2",
+          "12"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3381228,
+          48.8822775
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "IDFM:4083356998",
+        "name": "Jussieu",
+        "lines": [
+          "7",
+          "10"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3548215,
+          48.8459854
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "IDFM:4317659118",
+        "name": "Charles de Gaulle — Étoile (metro)",
+        "lines": [
+          "1",
+          "2",
+          "6"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2958259,
+          48.8749283
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "IDFM:4576973454",
+        "name": "Porte des Lilas",
+        "lines": [
+          "11"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.4065474,
+          48.8770575
+        ]
+      }
+    }
   ]
 }
