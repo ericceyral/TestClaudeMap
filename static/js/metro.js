@@ -215,13 +215,43 @@ async function loadVehiclePositions() {
                             <span class="popup-line-badge" style="background-color: ${vehicle.color}">${vehicle.line}</span>
                             Train - Ligne ${vehicle.line}
                         </div>
+                        <div class="popup-info">
                     `;
 
-                    if (vehicle.speed !== null) {
-                        popupContent += `<p>Vitesse: ${Math.round(vehicle.speed)} km/h</p>`;
+                    // Station d'origine
+                    if (vehicle.origin_station) {
+                        popupContent += `
+                            <p><i class="fas fa-map-marker-alt" style="color: #4CAF50;"></i> <strong>Départ:</strong> ${vehicle.origin_station}</p>
+                        `;
                     }
 
-                    marker.bindPopup(popupContent);
+                    // Destination
+                    if (vehicle.destination) {
+                        popupContent += `
+                            <p><i class="fas fa-flag-checkered" style="color: #F44336;"></i> <strong>Direction:</strong> ${vehicle.destination}</p>
+                        `;
+                    }
+
+                    // Heure d'arrivée estimée
+                    if (vehicle.estimated_arrival) {
+                        popupContent += `
+                            <p><i class="fas fa-clock" style="color: #2196F3;"></i> <strong>Arrivée estimée:</strong> ${vehicle.estimated_arrival}</p>
+                        `;
+                    }
+
+                    // Statut
+                    const statusText = vehicle.current_status === 'IN_TRANSIT' ? 'En circulation' : 'À l\'arrêt';
+                    const statusIcon = vehicle.current_status === 'IN_TRANSIT' ? 'fa-train' : 'fa-pause-circle';
+                    popupContent += `
+                        <p><i class="fas ${statusIcon}" style="color: #9C27B0;"></i> <strong>Statut:</strong> ${statusText}</p>
+                    `;
+
+                    popupContent += `</div>`;
+
+                    marker.bindPopup(popupContent, {
+                        className: 'train-popup',
+                        maxWidth: 300
+                    });
                     marker.addTo(vehiclesLayer);
                 }
             });

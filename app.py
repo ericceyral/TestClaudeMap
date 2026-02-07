@@ -357,6 +357,22 @@ def estimate_train_positions(departures, terminus_info):
         # Créer un ID unique pour le véhicule
         vehicle_id = departure.get("vehicle_ref") or f"{line}_{station_id}_{departure_time.isoformat()}"
 
+        # Calculer l'heure d'arrivée estimée au terminus
+        # Estimation basée sur le nombre moyen de stations (15 stations par ligne en moyenne)
+        # avec 90 secondes par station
+        avg_stations_to_terminus = 15
+        travel_time_to_terminus = avg_stations_to_terminus * AVERAGE_TRAVEL_TIME
+        estimated_arrival = departure_time + timedelta(seconds=travel_time_to_terminus)
+
+        # Nom de la station d'origine
+        origin_name = station.get("name", "") if isinstance(station, dict) else ""
+        if not origin_name:
+            # Chercher dans TERMINUS_STATIONS
+            for tid, tname, tlat, tlng in terminus_info.get(line, []):
+                if tid == station_id:
+                    origin_name = tname
+                    break
+
         vehicles.append({
             "id": vehicle_id,
             "line": line,
@@ -367,7 +383,10 @@ def estimate_train_positions(departures, terminus_info):
             "speed": 40 if status == "IN_TRANSIT" else 0,
             "stop_id": station_id if status == "STOPPED_AT" else None,
             "current_status": status,
-            "destination": destination
+            "destination": destination,
+            "origin_station": origin_name,
+            "departure_time": departure_time.isoformat(),
+            "estimated_arrival": estimated_arrival.strftime("%H:%M")
         })
 
     return vehicles
