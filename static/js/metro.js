@@ -38,8 +38,14 @@ let map;
 let linesLayer;
 let stationsLayer;
 let vehiclesLayer;
+let bikeLanesLayer;
+let bikeRouteLayer;
 let selectedLines = new Set(Object.keys(CONFIG.lineColors));
 let updateTimer;
+let showBikeLanes = false;
+let bikeRouteMode = false;
+let bikeRouteStart = null;
+let bikeRouteEnd = null;
 
 /**
  * Initialise la carte Leaflet
@@ -65,11 +71,16 @@ function initMap() {
     linesLayer = L.layerGroup().addTo(map);
     stationsLayer = L.layerGroup().addTo(map);
     vehiclesLayer = L.layerGroup().addTo(map);
+    bikeLanesLayer = L.layerGroup();  // Pas ajouté par défaut
+    bikeRouteLayer = L.layerGroup().addTo(map);
 
     // Charger les données
     loadMetroLines();
     loadMetroStations();
     loadVehiclePositions();
+
+    // Événement de clic sur la carte pour le mode itinéraire vélo
+    map.on('click', handleMapClick);
 
     // Démarrer les mises à jour automatiques
     startAutoUpdate();
@@ -374,6 +385,192 @@ function toggleMobileMenu() {
     if (overlay) {
         overlay.classList.toggle('visible');
     }
+}
+
+/**
+ * Charge et affiche les pistes cyclables
+ */
+async function loadBikeLanes() {
+    try {
+        const response = await fetch('/api/bike-lanes');
+        const data = await response.json();
+
+        bikeLanesLayer.clearLayers();
+
+        if (data.features && data.features.length > 0) {
+            L.geoJSON(data, {
+                style: {
+                    color: '#00CC66',
+                    weight: 2,
+                    opacity: 0.7
+                },
+                onEachFeature: (feature, layer) => {
+                    const props = feature.properties || {};
+                    const name = props.nom_voie || props.name || 'Piste cyclable';
+                    const type = props.amenagement || props.highway || 'Non spécifié';
+                    layer.bindPopup(`
+                        <div class="popup-title"><i class="fas fa-bicycle"></i> ${name}</div>
+                        <p>Type: ${type}</p>
+                    `);
+                }
+            }).addTo(bikeLanesLayer);
+
+            console.log(`${data.features.length} pistes cyclables chargées`);
+        }
+    } catch (error) {
+        console.error('Erreur lors du chargement des pistes cyclables:', error);
+    }
+}
+
+/**
+ * Toggle l'affichage des pistes cyclables
+ */
+function toggleBikeLanes() {
+    showBikeLanes = !showBikeLanes;
+
+    if (showBikeLanes) {
+        bikeLanesLayer.addTo(map);
+        loadBikeLanes();
+        document.getElementById('toggle-bike-lanes')?.classList.add('active');
+    } else {
+        map.removeLayer(bikeLanesLayer);
+        document.getElementById('toggle-bike-lanes')?.classList.remove('active');
+    }
+}
+
+/**
+ * Active/désactive le mode itinéraire vélo
+ */
+function toggleBikeRouteMode() {
+    bikeRouteMode = !bikeRouteMode;
+    bikeRouteStart = null;
+    bikeRouteEnd = null;
+    bikeRouteLayer.clearLayers();
+
+    const btn = document.getElementById('toggle-bike-route');
+    const info = document.getElementById('bike-route-info');
+
+    if (bikeRouteMode) {
+        btn?.classList.add('active');
+        if (info) info.textContent = 'Cliquez sur la carte pour définir le point de départ';
+        map.getContainer().style.cursor = 'crosshair';
+    } else {
+        btn?.classList.remove('active');
+        if (info) info.textContent = '';
+        map.getContainer().style.cursor = '';
+    }
+}
+
+/**
+ * Gère les clics sur la carte pour le mode itinéraire
+ */
+function handleMapClick(e) {
+    if (!bikeRouteMode) return;
+
+    const latlng = e.latlng;
+
+    if (!bikeRouteStart) {
+        // Premier clic: définir le point de départ
+        bikeRouteStart = latlng;
+        bikeRouteLayer.clearLayers();
+
+        const startMarker = L.marker(latlng, {
+            icon: L.divIcon({
+                className: 'bike-marker start-marker',
+                html: '<div style="background: #4CAF50; width: 20px; height: 20px; border-radius: 50%; border: 3px solid white; box-shadow: 0 2px 5px rgba(0,0,0,0.3);"></div>',
+                iconSize: [20, 20],
+                iconAnchor: [10, 10]
+            })
+        }).bindPopup('Point de départ');
+        startMarker.addTo(bikeRouteLayer);
+
+        document.getElementById('bike-route-info').textContent = 'Cliquez pour définir le point d\'arrivée';
+
+    } else if (!bikeRouteEnd) {
+        // Deuxième clic: définir le point d'arrivée et calculer l'itinéraire
+        bikeRouteEnd = latlng;
+
+        const endMarker = L.marker(latlng, {
+            icon: L.divIcon({
+                className: 'bike-marker end-marker',
+                html: '<div style="background: #F44336; width: 20px; height: 20px; border-radius: 50%; border: 3px solid white; box-shadow: 0 2px 5px rgba(0,0,0,0.3);"></div>',
+                iconSize: [20, 20],
+                iconAnchor: [10, 10]
+            })
+        }).bindPopup('Point d\'arrivée');
+        endMarker.addTo(bikeRouteLayer);
+
+        // Calculer l'itinéraire
+        calculateBikeRoute();
+    }
+}
+
+/**
+ * Calcule et affiche l'itinéraire vélo
+ */
+async function calculateBikeRoute() {
+    if (!bikeRouteStart || !bikeRouteEnd) return;
+
+    document.getElementById('bike-route-info').textContent = 'Calcul de l\'itinéraire...';
+
+    try {
+        const url = `/api/bike-route?start_lat=${bikeRouteStart.lat}&start_lng=${bikeRouteStart.lng}&end_lat=${bikeRouteEnd.lat}&end_lng=${bikeRouteEnd.lng}`;
+        const response = await fetch(url);
+        const data = await response.json();
+
+        if (data.error) {
+            document.getElementById('bike-route-info').textContent = 'Erreur: ' + data.error;
+            return;
+        }
+
+        // Afficher l'itinéraire
+        if (data.route && data.route.features) {
+            L.geoJSON(data.route, {
+                style: {
+                    color: '#2196F3',
+                    weight: 5,
+                    opacity: 0.8,
+                    dashArray: '10, 10'
+                }
+            }).addTo(bikeRouteLayer);
+        }
+
+        // Afficher les informations
+        const info = document.getElementById('bike-route-info');
+        info.innerHTML = `
+            <strong><i class="fas fa-bicycle"></i> Itinéraire vélo</strong><br>
+            <i class="fas fa-road"></i> Distance: ${data.distance_km} km<br>
+            <i class="fas fa-clock"></i> Durée: ${data.duration_text}
+        `;
+
+        // Ajuster la vue
+        map.fitBounds([
+            [bikeRouteStart.lat, bikeRouteStart.lng],
+            [bikeRouteEnd.lat, bikeRouteEnd.lng]
+        ], { padding: [50, 50] });
+
+        // Désactiver le mode après le calcul
+        bikeRouteMode = false;
+        map.getContainer().style.cursor = '';
+        document.getElementById('toggle-bike-route')?.classList.remove('active');
+
+    } catch (error) {
+        console.error('Erreur calcul itinéraire:', error);
+        document.getElementById('bike-route-info').textContent = 'Erreur lors du calcul';
+    }
+}
+
+/**
+ * Efface l'itinéraire vélo
+ */
+function clearBikeRoute() {
+    bikeRouteLayer.clearLayers();
+    bikeRouteStart = null;
+    bikeRouteEnd = null;
+    bikeRouteMode = false;
+    map.getContainer().style.cursor = '';
+    document.getElementById('toggle-bike-route')?.classList.remove('active');
+    document.getElementById('bike-route-info').textContent = '';
 }
 
 /**

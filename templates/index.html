@@ -89,6 +89,23 @@
                     </div>
                 </div>
 
+                <!-- Section Vélo -->
+                <div class="bike-panel">
+                    <h3><i class="fas fa-bicycle"></i> Vélo</h3>
+                    <div class="bike-controls">
+                        <button id="toggle-bike-lanes" class="btn-bike" onclick="toggleBikeLanes()">
+                            <i class="fas fa-road"></i> Pistes cyclables
+                        </button>
+                        <button id="toggle-bike-route" class="btn-bike" onclick="toggleBikeRouteMode()">
+                            <i class="fas fa-route"></i> Calculer itinéraire
+                        </button>
+                        <button id="clear-bike-route" class="btn-bike btn-clear" onclick="clearBikeRoute()">
+                            <i class="fas fa-times"></i> Effacer
+                        </button>
+                    </div>
+                    <div id="bike-route-info" class="bike-route-info"></div>
+                </div>
+
                 {% if not has_api_key %}
                 <div class="api-warning">
                     <i class="fas fa-exclamation-triangle"></i>

@@ -498,6 +498,99 @@ html, body {
     min-width: 220px;
 }
 
+/* Bike panel styles */
+.bike-panel {
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 15px;
+}
+
+.bike-panel h3 {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    margin-bottom: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.bike-panel h3 i {
+    color: #00CC66;
+    margin-right: 5px;
+}
+
+.bike-controls {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.btn-bike {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 15px;
+    background: rgba(0, 204, 102, 0.1);
+    border: 1px solid rgba(0, 204, 102, 0.3);
+    color: var(--text-primary);
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 0.85rem;
+    transition: all var(--transition-speed);
+}
+
+.btn-bike:hover {
+    background: rgba(0, 204, 102, 0.2);
+    border-color: rgba(0, 204, 102, 0.5);
+}
+
+.btn-bike.active {
+    background: rgba(0, 204, 102, 0.3);
+    border-color: #00CC66;
+    color: #00CC66;
+}
+
+.btn-bike i {
+    color: #00CC66;
+}
+
+.btn-bike.btn-clear {
+    background: rgba(244, 67, 54, 0.1);
+    border-color: rgba(244, 67, 54, 0.3);
+}
+
+.btn-bike.btn-clear:hover {
+    background: rgba(244, 67, 54, 0.2);
+    border-color: rgba(244, 67, 54, 0.5);
+}
+
+.btn-bike.btn-clear i {
+    color: #F44336;
+}
+
+.bike-route-info {
+    margin-top: 12px;
+    padding: 10px;
+    background: rgba(33, 150, 243, 0.1);
+    border-radius: 8px;
+    font-size: 0.85rem;
+    line-height: 1.6;
+    color: var(--text-primary);
+    display: none;
+}
+
+.bike-route-info:not(:empty) {
+    display: block;
+}
+
+.bike-route-info i {
+    margin-right: 5px;
+}
+
+.bike-route-info strong {
+    color: #2196F3;
+}
+
 .vehicle-marker {
     border-radius: 50%;
     display: flex;

@@ -7,7 +7,7 @@ import os
 import json
 import requests
 from datetime import datetime, timedelta
-from flask import Flask, render_template, jsonify
+from flask import Flask, render_template, jsonify, request
 from dotenv import load_dotenv
 
 load_dotenv()
@@ -20,8 +20,17 @@ IDFM_API_KEY = os.getenv('IDFM_API_KEY', '')
 # URL de l'API SIRI-Lite pour les prochains passages
 IDFM_SIRI_LITE_URL = "https://prim.iledefrance-mobilites.fr/marketplace/stop-monitoring"
 
+# URL de l'API Geovelo pour les itinéraires vélo
+GEOVELO_API_URL = "https://prim.iledefrance-mobilites.fr/marketplace/v2/navitia/journeys"
+
+# URL de l'API pour les pistes cyclables
+BIKE_LANES_API_URL = "https://data.iledefrance-mobilites.fr/api/explore/v2.1/catalog/datasets/amenagements-velo-en-ile-de-france/exports/geojson"
+
 # Temps moyen entre deux stations en secondes
 AVERAGE_TRAVEL_TIME = 90
+
+# Vitesse moyenne vélo en km/h
+BIKE_SPEED_KMH = 15
 
 # Couleurs officielles des lignes de métro parisien
 METRO_COLORS = {
@@ -141,6 +150,13 @@ _departures_cache = {
     "timestamp": None
 }
 CACHE_DURATION_SECONDS = 120  # Rafraîchir toutes les 2 minutes
+
+# Cache pour les pistes cyclables (données volumineuses, cache long)
+_bike_lanes_cache = {
+    "data": None,
+    "timestamp": None
+}
+BIKE_LANES_CACHE_DURATION = 3600  # 1 heure
 
 
 def get_metro_lines_geojson():
@@ -485,6 +501,104 @@ def get_line_reports():
     return {"reports": reports}
 
 
+def get_bike_lanes():
+    """
+    Récupère les pistes cyclables depuis l'API IDFM.
+    Utilise un cache d'1 heure pour éviter les requêtes répétées.
+    """
+    global _bike_lanes_cache
+
+    now = datetime.now()
+
+    # Vérifier si le cache est valide
+    if (_bike_lanes_cache["data"] is not None and
+        _bike_lanes_cache["timestamp"] is not None and
+        (now - _bike_lanes_cache["timestamp"]).total_seconds() < BIKE_LANES_CACHE_DURATION):
+        return _bike_lanes_cache["data"]
+
+    try:
+        # Limiter à 3000 features pour les performances
+        params = {
+            "limit": 3000
+        }
+
+        response = requests.get(
+            BIKE_LANES_API_URL,
+            params=params,
+            timeout=60
+        )
+
+        if response.status_code == 200:
+            data = response.json()
+            _bike_lanes_cache["data"] = data
+            _bike_lanes_cache["timestamp"] = now
+            return data
+        else:
+            print(f"Erreur API pistes cyclables: {response.status_code}")
+            return {"type": "FeatureCollection", "features": []}
+
+    except Exception as e:
+        print(f"Exception API pistes cyclables: {e}")
+        return {"type": "FeatureCollection", "features": []}
+
+
+def calculate_bike_route(start_lat, start_lng, end_lat, end_lng):
+    """
+    Calcule un itinéraire vélo entre deux points.
+    Utilise une estimation simple basée sur la distance à vol d'oiseau.
+    """
+    import math
+
+    # Calcul de la distance à vol d'oiseau (formule de Haversine)
+    R = 6371  # Rayon de la Terre en km
+
+    lat1 = math.radians(start_lat)
+    lat2 = math.radians(end_lat)
+    delta_lat = math.radians(end_lat - start_lat)
+    delta_lng = math.radians(end_lng - start_lng)
+
+    a = math.sin(delta_lat/2)**2 + math.cos(lat1) * math.cos(lat2) * math.sin(delta_lng/2)**2
+    c = 2 * math.atan2(math.sqrt(a), math.sqrt(1-a))
+
+    distance_km = R * c
+
+    # Facteur de détour typique en ville (les routes ne sont pas en ligne droite)
+    detour_factor = 1.3
+    actual_distance = distance_km * detour_factor
+
+    # Calcul du temps (en minutes)
+    time_minutes = (actual_distance / BIKE_SPEED_KMH) * 60
+
+    # Créer une ligne droite pour l'affichage (simplifié)
+    route_geojson = {
+        "type": "FeatureCollection",
+        "features": [{
+            "type": "Feature",
+            "properties": {
+                "distance_km": round(actual_distance, 2),
+                "duration_minutes": round(time_minutes),
+                "mode": "bike"
+            },
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [start_lng, start_lat],
+                    [end_lng, end_lat]
+                ]
+            }
+        }]
+    }
+
+    return {
+        "route": route_geojson,
+        "distance_km": round(actual_distance, 2),
+        "duration_minutes": round(time_minutes),
+        "duration_text": f"{int(time_minutes)} min",
+        "start": {"lat": start_lat, "lng": start_lng},
+        "end": {"lat": end_lat, "lng": end_lng}
+    }
+
+
 @app.route('/')
 def index():
     """Page principale avec la carte."""
@@ -524,6 +638,34 @@ def api_status():
         "api_configured": bool(IDFM_API_KEY),
         "metro_lines": list(METRO_LINE_IDS.keys())
     })
+
+
+@app.route('/api/bike-lanes')
+def api_bike_lanes():
+    """API pour récupérer les pistes cyclables."""
+    return jsonify(get_bike_lanes())
+
+
+@app.route('/api/bike-route')
+def api_bike_route():
+    """
+    API pour calculer un itinéraire vélo.
+    Paramètres: start_lat, start_lng, end_lat, end_lng
+    """
+    try:
+        start_lat = float(request.args.get('start_lat'))
+        start_lng = float(request.args.get('start_lng'))
+        end_lat = float(request.args.get('end_lat'))
+        end_lng = float(request.args.get('end_lng'))
+
+        result = calculate_bike_route(start_lat, start_lng, end_lat, end_lng)
+        return jsonify(result)
+
+    except (TypeError, ValueError) as e:
+        return jsonify({
+            "error": "Paramètres invalides. Requis: start_lat, start_lng, end_lat, end_lng",
+            "details": str(e)
+        }), 400
 
 
 if __name__ == '__main__':
